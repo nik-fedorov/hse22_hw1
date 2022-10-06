@@ -24,7 +24,8 @@ fastqc -o fastqc pairedend* matepairs*
 multiqc -o multiqc fastqc
 ```
 
-## Вставить скрины
+![](https://github.com/nik-fedorov/hse22_hw1/blob/main/screenshots/before1.png)
+![](https://github.com/nik-fedorov/hse22_hw1/blob/main/screenshots/before2.png)
 
 ```
 # подрезаем чтения
@@ -41,7 +42,8 @@ fastqc -o fastqc_trimmed pairedend* matepairs*
 multiqc -o multiqc_trimmed fastqc_trimmed
 ```
 
-## Вставить скрины
+![](https://github.com/nik-fedorov/hse22_hw1/blob/main/screenshots/after1.png)
+![](https://github.com/nik-fedorov/hse22_hw1/blob/main/screenshots/after2.png)
 
 ```
 # собираем контиги из подрезанных чтений
@@ -57,4 +59,4 @@ platanus gap_close -o contigs -c contigs_scaffold.fa -IP1 pairedend*.fastq.trimm
 rm matepairs* pairedend*
 ```
 
-Ссылка на [Colab](https://drive.google.com/file/d/1MZq8y6x-PWOKyukWdG8DjQSJW3_zXdBo/view?usp=sharing), где проводились остальные вычисления.
+Ссылка на [ноутбук в Colab](https://drive.google.com/file/d/1MZq8y6x-PWOKyukWdG8DjQSJW3_zXdBo/view?usp=sharing) и тот же [ноутбук в репозитории](https://github.com/nik-fedorov/hse22_hw1/blob/main/src/hse22_hw1.ipynb), где проводились остальные вычисления.
